@@ -1,17 +1,25 @@
-import { Component } from "react";
+// import { Component } from "react";
 import PropTypes from "prop-types";
 
-class Notification extends Component {
-  static defaultProps = {
-    message: "",
-  };
-  static propTypes = {
-    message: PropTypes.string,
-  };
-
-  render() {
-    return <p>{this.props.message}</p>;
-  }
+export default function Notification({ message }) {
+  return <p>{message}</p>;
 }
 
-export default Notification;
+Notification.propTypes = {
+  message: PropTypes.string,
+};
+
+// class Notification extends Component {
+//   static defaultProps = {
+//     message: "",
+//   };
+//   static propTypes = {
+//     message: PropTypes.string,
+//   };
+
+//   render() {
+//     return <p>{this.props.message}</p>;
+//   }
+// }
+
+// export default Notification;
