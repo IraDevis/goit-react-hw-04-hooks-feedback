@@ -5,14 +5,18 @@ export default function Notification({ message }) {
   return <p>{message}</p>;
 }
 
+Notification.defaultProps = {
+  message: "",
+};
+
 Notification.propTypes = {
   message: PropTypes.string,
 };
 
 // class Notification extends Component {
-//   static defaultProps = {
-//     message: "",
-//   };
+// static defaultProps = {
+//   message: "",
+// };
 //   static propTypes = {
 //     message: PropTypes.string,
 //   };
